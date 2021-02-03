@@ -1,10 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Navbar from './components/Navbar'
+import BackgroundDiv from './components/projectCards/backgroundDiv'
+
 
 function App() {
   return (
     <div className="App">
-      
+      <Navbar />
+      <BackgroundDiv />
     </div>
   );
 }
