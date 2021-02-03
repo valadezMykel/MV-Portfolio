@@ -1,14 +1,15 @@
 
 import Navbar from './components/Navbar'
 import BackgroundDiv from './components/projectCards/backgroundDiv'
+import ScreenSizeContext from './contexts/screenSizeContext'
 
 
 function App() {
   return (
-    <div className="App">
+    <ScreenSizeContext>
       <Navbar />
       <BackgroundDiv />
-    </div>
+    </ScreenSizeContext>
   );
 }
 

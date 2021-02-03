@@ -1,7 +1,10 @@
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
+import { GetScreenState } from '../../contexts/screenSizeContext'
 
 export default function backgroundDiv() {
+    const isMobile = GetScreenState()
+    console.log(isMobile)
     const styles = {
         backdrop: {
             backgroundColor: 'purple',
@@ -23,12 +26,26 @@ export default function backgroundDiv() {
 
         }
     }
+
+    function whichBackgrounds() {
+        if(isMobile) {
+            return (
+                <Row>
+                    <Col md={{ span: 4, offset: 7 }} style={styles.project}></Col>
+                </Row>
+            )
+        } else {
+            return (
+                <Row>
+                    <Col md={{ span: 4, offset: 7 }} style={styles.backdrop}></Col>
+                    <Col md={{ span: 4, offset: 7 }} style={styles.project}></Col> 
+                </Row>
+            )
+        }
+    }
     return (
         <Container>
-            <Row>
-                <Col md={{ span: 4, offset: 7 }} style={styles.backdrop}></Col>
-                <Col md={{ span: 4, offset: 7 }} style={styles.project}></Col>
-            </Row>
+            {whichBackgrounds()}
             <Row>stop</Row>
         </Container>
     )
