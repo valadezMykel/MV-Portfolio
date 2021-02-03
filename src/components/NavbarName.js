@@ -10,7 +10,8 @@ export default function Navbar() {
         <Nav className='justify-content-center mt-5' id='Nav' style={stylings}>
             <Nav.Item>
                 <Nav.Link id='myName'>
-                    Mykel Valadez
+                    Mykel 
+                    Valadez
                 </Nav.Link>  
             </Nav.Item>
         </Nav>

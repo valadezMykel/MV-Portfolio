@@ -2,51 +2,26 @@ import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
 import { GetScreenState } from '../../contexts/screenSizeContext'
 
-export default function backgroundDiv() {
+export default function backgroundDiv(props) {
+
     const isMobile = GetScreenState()
-    console.log(isMobile)
+    const boxShadow = props.isReversed ? '-2vw -2vh purple' : '2vw -2vh purple'
+
     const styles = {
-        backdrop: {
-            backgroundColor: 'purple',
-            minHeight: '30vh',
-            position: 'absolute',
-            top: '10vh',
-            right: '10vh',
-            zIndex: -1
-        },
 
         project: {
-            backgroundColor: 'blue',
+            backgroundColor: 'white',
             minHeight: '30vh',
-            // position: 'relative',
-            zIndex: 1
-        },
-
-        cardBody:{
-
+            border: '5px solid blue',
+            boxShadow: isMobile ? '0px 0px' : boxShadow
         }
     }
 
-    function whichBackgrounds() {
-        if(isMobile) {
-            return (
-                <Row>
-                    <Col md={{ span: 4, offset: 7 }} style={styles.project}></Col>
-                </Row>
-            )
-        } else {
-            return (
-                <Row>
-                    <Col md={{ span: 4, offset: 7 }} style={styles.backdrop}></Col>
-                    <Col md={{ span: 4, offset: 7 }} style={styles.project}></Col> 
-                </Row>
-            )
-        }
-    }
     return (
-        <Container>
-            {whichBackgrounds()}
-            <Row>stop</Row>
+        <Container style={{position: 'relative'}} className='mt-5'>
+                <Row>
+                    <Col sm={{ span: 4, offset: props.isReversed ? 0 : 8}} style={styles.project}>Hello</Col>
+                </Row>
         </Container>
     )
 }
