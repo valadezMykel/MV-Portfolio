@@ -9,6 +9,11 @@ export default function SmallNav() {
                     Projects
                 </Nav.Link>  
             </Nav.Item>
+            <Nav.Item>
+                <Nav.Link>
+                    Reach Out!
+                </Nav.Link>
+            </Nav.Item>
         </Nav>
     )
 }
