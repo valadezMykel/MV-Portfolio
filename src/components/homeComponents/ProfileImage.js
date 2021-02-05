@@ -28,26 +28,15 @@ export default function ProfileImage() {
     }
 
     return (
-    <>
         <Row>
             <Col>
                 <Image src='./IMG_1242.jpeg' style={image} />
                 <div style={stylings}>
-                    {/* <p style={{marginLeft: '5vw', clear: 'left'}}>Hi I'm Mykel</p> */}
-                    {/* <p style={{
-                        float: 'right',
-                        display: 'inline-block',
-                        marginLeft: '5vw',
-                        wordWrap: 'break-word',
-                        clear: 'left'
-
-                    }}>Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.</p> */}
                     <p style={{
                         
                     }}>Hello I'm Mykel, I code good. PleaseHello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.</p>
                 </div>
             </Col>
         </Row>
-    </>
     )
 }

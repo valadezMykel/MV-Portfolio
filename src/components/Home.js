@@ -4,7 +4,7 @@ import PortfolioImage from './homeComponents/ProfileImage'
 
 export default function Home() {
     return (
-    <div style={{backgroundColor: 'rgb(230,225,215)'}}>
+    <div style={{backgroundColor: 'rgb(230,225,215)', paddingTop: '20px'}}>
         <Container className='mt-5'>
             <PortfolioImage />
         </Container>
