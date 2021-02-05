@@ -2,25 +2,28 @@
 import NavbarName from './components/NavbarName'
 import BackgroundDiv from './components/projectCards/backgroundDiv'
 import ScreenSizeContext from './contexts/screenSizeContext'
-import SmallNav from './components/SmallNav'
-import PortfolioImage from './components/ProfileImage'
+import Home from './components/Home'
 import InfoCard from './components/infoCard'
 import { Container } from 'react-bootstrap'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
     <ScreenSizeContext>
       <div style={{backgroundColor: 'rgb(230,225,215)'}}>
         <NavbarName />
-        <Container className='mt-5'>
-          <PortfolioImage />
-        </Container>
       </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path= '/' component={Home} />
+        </Switch>
+      </BrowserRouter>
+
       <Container>
         <BackgroundDiv />
         <BackgroundDiv isReversed={true}/>
       </Container>
-      {/* <SmallNav /> */}
+
       {/* <InfoCard /> */}
     </ScreenSizeContext>
   );
