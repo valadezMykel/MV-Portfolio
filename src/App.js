@@ -10,10 +10,11 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 function App() {
   return (
     <ScreenSizeContext>
-      <div style={{backgroundColor: 'rgb(230,225,215)'}}>
-        <NavbarName />
-      </div>
       <BrowserRouter>
+        <div style={{backgroundColor: 'rgb(230,225,215)', paddingBottom: '20px'}}>
+          <NavbarName />
+        </div>
+      
         <Switch>
           <Route exact path= '/' component={Home} />
         </Switch>

@@ -16,8 +16,8 @@ const stylings = {
         display: 'inline-block'
     },
     iconLinks: {
+        color: 'black',
         fontSize: '5.5vh',
-        color: 'black !important',
         display: 'inline-block' 
     }
 }
@@ -40,11 +40,11 @@ export default function Navbar() {
                 </Nav.Link>  
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link style={stylings.iconLinks}>
-                    <a href="https://github.com/valadezMykel" class="fab fa-github icon" style={{color: 'black'}}></a>
+                <Nav.Link 
+                    style={stylings.iconLinks} href="https://github.com/valadezMykel" className="fab fa-github icon" target="_blank">
                 </Nav.Link>
-                <Nav.Link style={stylings.iconLinks}>
-                <a href="https://www.linkedin.com/in/mykel-valadez-3b18971b1/" class="fab fa-linkedin icon" style={{color: 'black'}}></a>
+                <Nav.Link 
+                    style={stylings.iconLinks} href="https://www.linkedin.com/in/mykel-valadez-3b18971b1/" target="_blank" className="fab fa-linkedin icon">
                 </Nav.Link>
             </Nav.Item>
         </Nav>

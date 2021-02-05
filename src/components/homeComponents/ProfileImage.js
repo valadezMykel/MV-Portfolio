@@ -32,9 +32,9 @@ export default function ProfileImage() {
             <Col>
                 <Image src='./IMG_1242.jpeg' style={image} />
                 <div style={stylings}>
-                    <p style={{
+                    <p style={{}}>
                         
-                    }}>Hello I'm Mykel, I code good. PleaseHello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.Hello I'm Mykel, I'm a coder.</p>
+                    </p>
                 </div>
             </Col>
         </Row>
