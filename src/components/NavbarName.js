@@ -27,7 +27,7 @@ export default function Navbar() {
     return (
         <Nav className='justify-content-around align-items-center' id='Nav' style={stylings.top}>
             <Nav.Item>
-                <Nav.Link style={stylings.textLinks} className='textLink' href='/portfolio'>
+                <Nav.Link style={stylings.textLinks} className='textLink' href='/projects'>
                     Projects
                 </Nav.Link>
                 <Nav.Link style={stylings.textLinks} className='textLink' href='/contact'>

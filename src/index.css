@@ -28,3 +28,7 @@ code {
 .iconLinks:hover {
   color: rgb(214,212,113) !important;
 }
+
+.textLink:hover {
+  color: rgb(214,212,113) !important;
+}

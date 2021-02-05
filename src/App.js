@@ -4,6 +4,7 @@ import BackgroundDiv from './components/projectCards/backgroundDiv'
 import ScreenSizeContext from './contexts/screenSizeContext'
 import Home from './components/Home'
 import ReachOut from './components/ReachOut'
+import Projects from './components/Projects'
 import { Container } from 'react-bootstrap'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
@@ -17,6 +18,7 @@ function App() {
         <Switch>
           <Route exact path= '/' component={Home} />
           <Route exact path='/contact' component={ReachOut} />
+          <Route exact path='/projects' component={Projects} />
         </Switch>
       </BrowserRouter>
 
