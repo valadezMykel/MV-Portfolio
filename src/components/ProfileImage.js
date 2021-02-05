@@ -6,25 +6,23 @@ export default function ProfileImage() {
     const image = {
         objectFit: "cover",
         width: '30vw',
-        height: '80%',
+        height: '50vh',
         objectPosition: '0 0',
-        // rotate: '90deg',
-        // overflow: 'hidden',
-        // aspectRatio: '3:4',
         zIndex: 1,
         float: 'left',
-        border: '5px solid rgb(214,212,113)',
+        border: '5px solid black',
     }
 
     const stylings = {
         width: '50vw',
-        height: '80%',
+        height: '60vh',
         marginLeft: '15vw',
-        backgroundColor: 'rgb(214,242,255, .7)',
+        backgroundColor: 'white',
+        // 'rgb(214,242,255, .7)',
         // 'rgb(230,225,215)',
         padding: '20px',
-        marginTop: '5%'
-
+        marginTop: '5%',
+        border: '1vw solid rgb(214,212,113)'
     }
 
     return (
@@ -33,7 +31,7 @@ export default function ProfileImage() {
             <Col>
                 <Image src='./IMG_1242.jpeg' style={image} />
                 <div style={stylings}>
-                    Hi I'm Mykel
+                    <p style={{marginLeft: '5vw', clear: 'left'}}>Hi I'm Mykel</p>
                 </div>
             </Col>
         </Row>
