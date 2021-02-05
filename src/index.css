@@ -13,10 +13,18 @@ code {
     monospace;
 }
 
+
+/* NavbarName */
+
 /* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 #myName {
   /* font-family: 'Press Start 2P', cursive; */
   font-family: 'Amatic SC', cursive;
+}
+
+
+.iconLinks:hover {
+  color: rgb(214,212,113) !important;
 }
