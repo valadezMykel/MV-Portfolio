@@ -2,9 +2,7 @@ import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 
 const stylings = {
-    top: {
-        // backgroundColor: 'rgb(230,225,215)'
-    },
+
     nameLink: {
         fontSize: '12vh',
         color: 'rgb(141,77,90)'

@@ -4,10 +4,14 @@ import PortfolioImage from './homeComponents/ProfileImage'
 
 export default function Home() {
     return (
-    <div style={{backgroundColor: 'rgb(230,225,215)', paddingTop: '10px', paddingBottom: '25px'}}>
-        <Container className='mt-5'>
-            <PortfolioImage />
-        </Container>
-    </div>
+    <>
+        <PortfolioImage backgroundColor={'rgb(230,225,215)'} reversed={false} image={'IMG_1242.jpeg'} 
+            text={"Hi, I'm Mykel Valadez and I help people and business' get their ideas out on the internet."}
+            title={"Bring your web dream to life!"}/>
+        <PortfolioImage backgroundColor={'white'} reversed={true} image={'IMG_1192.jpeg'} 
+            text={"Hi, I'm Mykel Valadez and I help people and business' get their ideas out on the internet."}
+            title={"Bring your web dream to life!"}/>
+ 
+    </>
     )
 }
