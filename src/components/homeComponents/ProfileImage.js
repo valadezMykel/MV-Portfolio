@@ -19,7 +19,7 @@ export default function ProfileImage(props) {
         maxWidth: '800px',
         minHeight: '55vh',
         backgroundColor: props.reversed ? 'rgb(230,225,215)' : 'white',
-        // 'rgb(214,242,255, .7)',
+        // 'rgb(214,242,255, .7)', 
         // 'rgb(230,225,215)',
         padding: '5%',
         marginTop: '5%',
