@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Col, Row } from 'react-bootstrap'
+import { Col, Image } from 'react-bootstrap'
 import { GetScreenState } from '../../contexts/screenSizeContext'
 
 export default function backgroundDiv(props) {
@@ -18,10 +18,10 @@ export default function backgroundDiv(props) {
     }
 
     return (
-        <Container style={{position: 'relative'}} className='mt-5'>
-                <Row>
-                    <Col sm={{ span: 4, offset: props.isReversed ? 0 : 8}} style={styles.project}>Hello</Col>
-                </Row>
-        </Container>
+
+        <Col sm={{ span: 4, offset: props.isReversed ? 0 : 8}} style={styles.project}>
+            <Image src={props.image} /> 
+        </Col>
+
     )
 }

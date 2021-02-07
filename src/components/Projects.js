@@ -1,9 +1,10 @@
 import React from 'react'
+import ProjectRow from './projectCards/projectRow'
 
 export default function Projects() {
     return (
         <div>
-            projects
+            <ProjectRow />
         </div>
     )
 }

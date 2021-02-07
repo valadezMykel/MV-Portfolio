@@ -42,6 +42,7 @@ export default function ProfileImage(props) {
                     <h3 >
                         {props.title}
                     </h3>
+                    <br/>
                     <p style={{}}>
                         {props.text} 
                     </p>

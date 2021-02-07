@@ -21,13 +21,6 @@ function App() {
           <Route exact path='/projects' component={Projects} />
         </Switch>
       </BrowserRouter>
-
-      <Container>
-        <BackgroundDiv />
-        <BackgroundDiv isReversed={true}/>
-      </Container>
-
-      {/* <InfoCard /> */}
     </ScreenSizeContext>
   );
 }
