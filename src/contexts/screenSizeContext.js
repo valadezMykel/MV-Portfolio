@@ -12,7 +12,7 @@ export default function ScreenSize({children}) {
     useEffect(() => {
 
         function checkMobile() {
-            if(window.innerWidth < '576') {
+            if(window.innerWidth < '690') {
                 setIsMobile(true)
             } else {
                 setIsMobile(false)

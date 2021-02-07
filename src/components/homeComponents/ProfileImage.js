@@ -6,16 +6,6 @@ export default function ProfileImage(props) {
     
     const isMobile = GetScreenState()
 
-    let textSpace;
-
-    if(isMobile){
-        textSpace = '0'
-    } else if (props.isReversed) {
-        textSpace = '5vw'
-    } else {
-        textSpace = '0'
-    }
-
     const stylings = {
 
         textDiv: {
@@ -31,8 +21,8 @@ export default function ProfileImage(props) {
             fontSize: '20px',
             position: 'relative',
             zIndex: '3',
-            left: !isMobile && !props.isReversed ? '5vw' : '0',
-            right: !isMobile && props.isReversed ? '5wv' : '0'
+            left: !isMobile && !props.reversed ? '5vw' : '0',
+            right: !isMobile && props.reversed ? '5wv' : '0'
 
         },
 
@@ -46,13 +36,13 @@ export default function ProfileImage(props) {
             float: props.reversed ? 'right' : 'left',
             border: '5px solid black',
             // marginRight: props.reversed ? '0px' : '5vw',
-            marginLeft: props.reversed ? '80px' : '0px'
+            marginLeft: props.reversed ? '40px' : '0px'
         },
 
 
 
         h3: {
-            color: props.isReversed ? 'rgb(141,77,90)' : 'rgb(149,180,185)',
+            color: props.reversed ? 'rgb(141,77,90)' : 'rgb(149,180,185)',
         }
     }
 
