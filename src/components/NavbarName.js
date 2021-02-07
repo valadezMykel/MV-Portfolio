@@ -24,6 +24,7 @@ export default function Navbar() {
                 color: 'black',
                 fontSize: '5.5vh',
                 display: 'inline-block',
+                zIndex: '100',
                 position: scrolled ? 'fixed' : '',
                 right: scrolled ? '0' : '',
                 bottom: scrolled ? '0' : '',
@@ -33,8 +34,9 @@ export default function Navbar() {
                 color: 'black',
                 fontSize: '5.5vh',
                 display: 'inline-block',
+                zIndex: '100',
                 position: scrolled ? 'fixed' : '',
-                right: scrolled ? '1' : '',
+                right: scrolled ? '7.5%' : '',
                 bottom: scrolled ? '0' : '',
 
             }
