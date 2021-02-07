@@ -11,16 +11,23 @@ export default function backgroundDiv(props) {
 
         project: {
             backgroundColor: 'white',
-            minHeight: '30vh',
+            // height: '30vh',
+            // border: '5px solid rgb(230,225,215)',
+            // boxShadow: isMobile ? '0px 0px' : boxShadow,
+        },
+
+        img: {
+            objectFit: "contain",
+            // height: '40vh',
             border: '5px solid rgb(230,225,215)',
-            boxShadow: isMobile ? '0px 0px' : boxShadow
+            boxShadow: isMobile ? '0px 0px' : boxShadow,
         }
     }
 
     return (
 
-        <Col sm={{ span: 4, offset: props.isReversed ? 0 : 8}} style={styles.project}>
-            <Image src={props.image} /> 
+        <Col fluid sm={4} style={styles.project}>
+            <Image fluid src={props.image} style={styles.img} /> 
         </Col>
 
     )

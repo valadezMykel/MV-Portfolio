@@ -6,14 +6,17 @@ export default function projectInfo(props) {
 
     const stylings = {
         col: {
-            backgroundColor: 'red'
+            backgroundColor: 'rgb(208,205,219)',
+            padding: '20px'
         }
     }
 
     return (
-        <Col style={stylings.col}>
+        <Col sm={8}style={stylings.col}>
             <h2>{props.title}</h2>
-            <h4>Repository Link: <Link href={props.link}/></h4>
+            <h6>Repository Link: <Link to={{ pathname: props.repoLink}} target='blank'>Repo</Link></h6>
+            <h6>Live Project Link: <Link to={{ pathname: props.deployedLink}} target='blank'>Live</Link></h6>
+            <p>{props.description}</p>
         </Col>
     )
 }
