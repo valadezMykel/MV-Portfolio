@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import Nav from 'react-bootstrap/Nav'
+import { GetScreenState } from '../contexts/screenSizeContext'
 
 
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
+    const isMobile = GetScreenState()
 
     const stylings = {
 
@@ -43,6 +45,8 @@ export default function Navbar() {
         }
     }
 
+    const verticalOrNot = isMobile ? 'justify-content-around align-items-center flex-column' : 'justify-content-around align-items-center'
+
     useEffect(() => {
         window.onscroll = function() {scrollFunction()};
 
@@ -57,7 +61,7 @@ export default function Navbar() {
     })
 
     return (
-        <Nav className='justify-content-around align-items-center' id='Nav' style={stylings.top}>
+        <Nav className={verticalOrNot} id='Nav' style={stylings.top}>
             <Nav.Item>
                 <Nav.Link style={stylings.textLinks} className='textLink' href='/projects'>
                     Projects
