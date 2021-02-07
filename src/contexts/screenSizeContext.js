@@ -10,14 +10,19 @@ export default function ScreenSize({children}) {
     const [isMobile, setIsMobile] = useState(false)
 
     useEffect(() => {
-        window.addEventListener('resize', () => {
-            
+
+        function checkMobile() {
             if(window.innerWidth < '576') {
-                console.log('is mobile')
                 setIsMobile(true)
             } else {
                 setIsMobile(false)
             }
+        }
+
+        checkMobile()
+
+        window.addEventListener('resize', () => {
+            checkMobile()
         })
     })
 

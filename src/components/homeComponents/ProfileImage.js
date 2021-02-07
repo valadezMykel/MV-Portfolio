@@ -6,6 +6,16 @@ export default function ProfileImage(props) {
     
     const isMobile = GetScreenState()
 
+    let textSpace;
+
+    if(isMobile){
+        textSpace = '0'
+    } else if (props.isReversed) {
+        textSpace = '5vw'
+    } else {
+        textSpace = '0'
+    }
+
     const stylings = {
 
         textDiv: {
@@ -20,14 +30,15 @@ export default function ProfileImage(props) {
             border: '1vw solid rgb(214,212,113)',
             fontSize: '20px',
             position: 'relative',
-            left: isMobile ? '' : '5vw',
             zIndex: '3',
+            left: !isMobile && !props.isReversed ? '5vw' : '0',
+            right: !isMobile && props.isReversed ? '5wv' : '0'
 
         },
 
         image: {
             objectFit: "cover",
-            width: '30vw',
+            width: isMobile ? '95vw' : '30vw',
             height: '80vh',
             objectPosition: '40% 40%',
             position: 'relative',
@@ -35,13 +46,13 @@ export default function ProfileImage(props) {
             float: props.reversed ? 'right' : 'left',
             border: '5px solid black',
             // marginRight: props.reversed ? '0px' : '5vw',
-            // marginLeft: props.reversed ? '50px' : '0px'
+            marginLeft: props.reversed ? '80px' : '0px'
         },
 
 
 
         h3: {
-            color: 'rgb(149,180,185)'
+            color: props.isReversed ? 'rgb(141,77,90)' : 'rgb(149,180,185)',
         }
     }
 
@@ -66,12 +77,11 @@ export default function ProfileImage(props) {
                 </Col>
             </Row>
         )
-    } else {
+    } else if ( props.isReversed ){
         profilePiece = (
 
             <Row>
                 <Col md >
-                    <Image src={props.image} style={stylings.image} />
                     <div style={stylings.textDiv}>
                         <h3 style={stylings.h3}>
                             {props.title}
@@ -81,6 +91,25 @@ export default function ProfileImage(props) {
                             {props.text} 
                         </p>
                     </div>
+                    <Image src={props.image} style={stylings.image} />
+                </Col>
+            </Row>
+        )
+    } else {
+        profilePiece = (
+
+            <Row>
+                <Col md >
+                    <Image src={props.image} style={stylings.image} />
+                    <div style={stylings.textDiv} >
+                        <h3 style={stylings.h3}>
+                            {props.title}
+                        </h3>
+                        <br/>
+                        <p style={{}}>
+                            {props.text} 
+                        </p>
+                    </div>   
                 </Col>
             </Row>
         )
