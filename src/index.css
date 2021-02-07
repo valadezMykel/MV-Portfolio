@@ -9,6 +9,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: 'white' !important;
+  position: relative;
+  z-index: -1;
 }
 
 code {

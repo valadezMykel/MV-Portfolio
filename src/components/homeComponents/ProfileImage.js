@@ -8,7 +8,8 @@ export default function ProfileImage(props) {
         width: '30vw',
         height: '80vh',
         objectPosition: '0 0',
-        zIndex: 1,
+        position: 'relative',
+        zIndex: '4',
         float: props.reversed ? 'right' : 'left',
         border: '5px solid black',
         marginRight: props.reversed ? '0px' : '50px',
@@ -26,6 +27,8 @@ export default function ProfileImage(props) {
         margin: '10%',
         border: '1vw solid rgb(214,212,113)',
         fontSize: '20px',
+        position: 'relative',
+        zIndex: '3',
 
         h3: {
             color: 'rgb(149,180,185)'

@@ -22,26 +22,10 @@ export default function Navbar() {
     
         },
         iconLinks: {
-            ln: {
-                color: 'black',
-                fontSize: '5.5vh',
-                display: 'inline-block',
-                zIndex: '100',
-                position: scrolled ? 'fixed' : '',
-                right: scrolled ? '0' : '',
-                bottom: scrolled ? '0' : '',
 
-            },
-            git: {
-                color: 'black',
-                fontSize: '5.5vh',
-                display: 'inline-block',
-                zIndex: '100',
-                position: scrolled ? 'fixed' : '',
-                right: scrolled ? '7.5%' : '',
-                bottom: scrolled ? '0' : '',
-
-            }
+            color: 'black',
+            fontSize: '5.5vh',
+            display: 'inline-block',
         }
     }
 
@@ -61,7 +45,7 @@ export default function Navbar() {
     })
 
     return (
-        <Nav className={verticalOrNot} id='Nav' style={stylings.top}>
+        <Nav className={verticalOrNot} id='Nav' style={{position: 'relative', zIndex: "auto"}}>
             <Nav.Item>
                 <Nav.Link style={stylings.textLinks} className='textLink' href='/projects'>
                     Projects
@@ -76,12 +60,17 @@ export default function Navbar() {
                     Valadez</p>
                 </Nav.Link>  
             </Nav.Item>
-            <Nav.Item>
+            <Nav.Item style={{
+                position: scrolled ? 'fixed' : '',
+                right: scrolled ? '0' : '',
+                bottom: scrolled ? '0' : '',
+                zIndex: scrolled ? '10' : '',
+            }}>
                 <Nav.Link 
-                    style={stylings.iconLinks.git} href="https://github.com/valadezMykel" className="iconLinks fab fa-github icon" target="_blank">
+                    style={stylings.iconLinks} href="https://github.com/valadezMykel" className="iconLinks fab fa-github icon" target="_blank">
                 </Nav.Link>
                 <Nav.Link 
-                    style={stylings.iconLinks.ln} href="https://www.linkedin.com/in/mykel-valadez-3b18971b1/" target="_blank" className="iconLinks fab fa-linkedin icon">
+                    style={stylings.iconLinks} href="https://www.linkedin.com/in/mykel-valadez-3b18971b1/" target="_blank" className="iconLinks fab fa-linkedin icon">
                 </Nav.Link>
             </Nav.Item>
         </Nav>
