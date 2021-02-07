@@ -5,6 +5,7 @@ export default function Projects() {
     return (
         <div>
             <ProjectRow 
+            background='rgb(208,205,219)'
             title='Workout Magic'
             repoLink='https://github.com/valadezMykel/Workout_Magic' 
             deployLink='https://infinite-eyrie-49427.herokuapp.com/?id=6004b20a4b1ddd0015e9b362'

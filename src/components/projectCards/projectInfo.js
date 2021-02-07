@@ -6,7 +6,8 @@ export default function projectInfo(props) {
 
     const stylings = {
         col: {
-            backgroundColor: 'rgb(208,205,219)',
+            backgroundColor: props.background,
+            // 'rgb(208,205,219)',
             padding: '20px'
         }
     }
