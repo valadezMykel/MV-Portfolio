@@ -30,7 +30,7 @@ export default function ProjectRow(props) {
     }
 
     return (
-        <Container style={stylings.contain} className='mt-5'>
+        <Container style={stylings.contain} className='mt-5 mb-5'>
             <Row>
                 {first}
                 {second}

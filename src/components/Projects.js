@@ -18,7 +18,7 @@ export default function Projects() {
             title='Your Digital Elf'
             repoLink='https://github.com/yourDigitalElf/yourDigitalElf' 
             deployLink='https://fast-anchorage-28495.herokuapp.com'
-            description='This project is designed as a way for clients to track their workouts in a way that gave them a way to visually track their projects.  As an exercise this project helped me to refine my ability to work with non-relational databases, specifically mongooseDB.  Exploring the advantages and disadvantages of a nosql database and how to use it effectively.'
+            description='Your Digital Elf is fun way to keep track of your friends and families christmas list.  Sign up is easy and if you want your own version for your specific holiday gift list fork the repository for yourself.'
             isReversed={true}
             image='/projectImgs/yourdigitalelf.gif'
             />
