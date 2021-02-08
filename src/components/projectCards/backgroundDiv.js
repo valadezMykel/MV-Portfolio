@@ -26,7 +26,7 @@ export default function backgroundDiv(props) {
 
     return (
 
-        <Col fluid sm={4} style={styles.project}>
+        <Col fluid md={4} style={styles.project}>
             <Image fluid src={props.image} style={styles.img} /> 
         </Col>
 

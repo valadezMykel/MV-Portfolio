@@ -13,10 +13,10 @@ export default function projectInfo(props) {
     }
 
     return (
-        <Col sm={8}style={stylings.col}>
+        <Col md={8}style={stylings.col}>
             <h2>{props.title}</h2>
             <h6>Repository Link: <Link to={{ pathname: props.repoLink}} target='blank'>Repo</Link></h6>
-            <h6>Live Project Link: <Link to={{ pathname: props.deployedLink}} target='blank'>Live</Link></h6>
+            <h6>Live Project Link: <Link to={{ pathname: props.deployLink}}  target='_blank'>Live</Link></h6>
             <p>{props.description}</p>
         </Col>
     )
