@@ -20,7 +20,7 @@ export default function ReachOut() {
                         <Card.Body>
                             <Card.Title>Contact Info</Card.Title>
                             <Card.Text>Email me at: <a href='mailto:valadezmykel@gmail.com'>valadezmykel@gmail.com</a></Card.Text>
-                            <Card.Text>Or message me through  <a href="https://www.linkedin.com/in/mykel-valadez-3b18971b1/" target="_blank" className="iconLinks fab fa-linkedin icon">LinkedIn</a></Card.Text>
+                            <Card.Text>Or message me through  <a href="https://www.linkedin.com/in/mykel-valadez-3b18971b1/" target="_blank" rel="noreferrer" className="iconLinks fab fa-linkedin icon">LinkedIn</a></Card.Text>
                         </Card.Body>
                         <Card.Img variant='bottom' src='IMG_1199.jpeg' style={stylings.pic} />
                     </Card>
